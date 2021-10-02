@@ -16,10 +16,10 @@ Loaded historical Dollar-Yen exchange rate futures data and applied time series 
 
 **Analysis:**
 
-1. Decomposition of the Settle price into trend and noise using a Hodrick-Prescott Filter 
-2. Forecasting Returns using an ARMA Model.
-3. Forecasting the Settle Price using an ARIMA Model.
-4. Forecasting Volatility with GARCH.
+1. Decomposed the Settle price into trend and noise using a Hodrick-Prescott Filter. 
+2. Forecasted Returns using an ARMA Model.
+3. Forecasted the Settle Price using an ARIMA Model.
+4. Forecasted Volatility with GARCH.
 
 Based on the results of the time series analysis and modeling:
 
@@ -34,7 +34,7 @@ Built a Scikit-Learn linear regression model to predict Yen futures ("settle") r
 
 **Analysis:**
 
-1. Data Preparation - prepared the data, creates returns and lagged returns, then split the data into training and testing sets.
+1. Data Preparation - prepared the data, created returns and lagged returns, then split the data into training and testing sets.
 2. Fit a Linear Regression Model to the data.
 3. Made predictions using the testing data.
 4. Evaluated out-of-sample performance - data the model has not seen before aka Testing Data.
@@ -42,6 +42,5 @@ Built a Scikit-Learn linear regression model to predict Yen futures ("settle") r
 
 Based on the results of the linear regression analysis and modeling:
 
-* Does this model perform better or worse on out-of-sample data compared to in-sample data?
-* Analyze the model performance for out-of-sample and in-sample data and write a conclusion
+* After analyzing the data, the out-of-sample data performed better than the in-sample data. For the out-of-sample data both the mean squared error and the root mean squared error were less than .05 which means it has has statistical significance.
 
